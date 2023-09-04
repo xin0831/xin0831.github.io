@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <mate name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>★♥小屋</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            body{
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            html{
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            .container{
-                height: 100%;
-                width:100%;
-                background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
-            }
-            .welcome{
-                font-size:14px;
-            }
-        </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<mate name="viewport" content="width=device-width,initial-scale=1.0">
+<title>★♥小屋</title>
+<style>
+    body {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        font-size: 45px;
+        text-align: center;
+        color: #ffffff;
+    }
+    @keyframes typing {
+        from { width: 0 }
+    }
+    @keyframes caret {
+        50% { border-right-color: #ffffff; }
+    }
+    p {
+        font-size: 50px;
+        width: 8em;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 2s steps(8), 
+                    caret .5s steps(1) 10; 
+        border-right: 5px solid transparent;
+        color: aliceblue;
+        font-family: '方正卡通简体 常规';
+    }
+    div {
+        animation: myfirst 5s;
+        -webkit-animation: myfirst 5s;
+    }
+</style>
 </head>
 <body>
     <div class="container">
-        <div class="welcome">欢迎来到★♥小屋</div>
+        <div class="text">
+            ★♥小屋
+        </div>
+        <p>欢迎来到昕昕小屋</p>
     </div>
 </body>
 </html>
